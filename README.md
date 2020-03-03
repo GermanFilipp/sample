@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project Setup:
 
-Things you may want to cover:
+* Create `.env` file, with structure from `.env.example`
 
-* Ruby version
+* Generete secret_key_base through `rake secret`  and add to .env
 
-* System dependencies
+* Run `bundle install`
 
-* Configuration
+* Run `rails db:create db:migrate`
 
-* Database creation
+* For delay jobs in second tab run `bundle exec sidekiq -q default`
 
-* Database initialization
+* Run `rails s`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
